@@ -296,9 +296,11 @@ article {
     color: rgb(105, 173, 236);
     z-index: 2;
     position: absolute;
-    top: 45%;
-    right: -5px;
+    top: 40%;
+    right: -8px;
     font-size: 75%;
+    border: 3px solid white;
+    border-radius: 50%;
 }
 
 /*------------------------------------------------------PORTFOLIO-------------------------------------------------*/
