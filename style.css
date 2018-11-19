@@ -62,6 +62,11 @@ header .entete {
     background-color: rgba(247, 247, 247, 0.9);
 }
 
+.logo {
+    position: relative;
+    left: 3%;
+}
+
 #navigation-entete {
     display: flex;
     flex-wrap: wrap;
@@ -431,6 +436,11 @@ figure {
     width: 260px;
     margin: 15px;
     background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+figure p {
+    text-align: left;
 }
 
 .item-portfolio {
@@ -446,7 +456,6 @@ figcaption {
     padding: 0 10px;
     opacity: 0;
     bottom: -30%;
-    left: 0;
     transition: all 0.4s ease;
 }
 
