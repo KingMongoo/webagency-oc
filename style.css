@@ -31,6 +31,15 @@
     src: url('webagency_images/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Robot-Black';
+    src: url('webagency_images/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('webagency_images/fonts/Roboto-Bold.ttf') format('truetype');
+}
 
 /*----------------------------------------------BODY---------------------------------------------------------------------*/
 
@@ -164,6 +173,7 @@ header .entete {
 
 .titre-bleu {
     color: rgb(78, 177, 213);
+    font-family: 'Robot-Black';
 }
 
 .texte-webagency {
@@ -198,6 +208,8 @@ a:link {
 /*------------------------------------------------------SERVICES--------------------------------------------------*/
 h3 {
     color: black;
+    font-size: 110%;
+    font-family: 'Roboto-Bold', sans-serif, arial;
 }
 
 #Services {
@@ -206,8 +218,8 @@ h3 {
 }
 
 .titre-services {
-    font-size: 200%;
-    font-weight: bold;
+    font-size: 250%;
+    font-family: 'Roboto-Bold', sans-serif, arial;
 }
 
 .separation-services {
@@ -310,11 +322,12 @@ article {
     padding-top: 2%;
     margin: 0;
     background-color: rgb(241, 238, 238);
+    
 }
 
 .presentation-projets {
-    font-weight: bold;
-    font-size: 200%;
+    font-size: 250%;
+    font-family: 'Roboto-Bold', sans-serif, arial;
 }
 
 .paragraphe-projets {
