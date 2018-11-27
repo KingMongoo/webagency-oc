@@ -15,15 +15,14 @@
 <body>
 
 
-<!-- HEADER MENU FIXE ET SLIDER -->
+<!-- HEADER MENU FIXE -->
         <header>
-                <div class="entete">
 
                         <div class="logo">
                                 <img src="webagency_images/images/logo.png" alt="logo WebAgency" />
                         </div>
 
-                        <nav class="nav-entete">
+                        <nav>
                                 <ul id="navigation-entete">
                                         <li><a href="#">Accueil</a></li>
                                         <li><a href="#Services">Services</a></li>
@@ -31,34 +30,34 @@
                                         <li><a href="#Contact">Contact</a></li>
                                 </ul>
                         </nav>
-                </div>
-
-                <div class="slider">
-                        <img src="webagency_images/images/slider/bg1.jpg" alt="slider" />
-                        <div class="liseret-background"></div>
-
-                        <i class="fas fa-chevron-left chevron-g"></i>
-                        <i class="fas fa-chevron-right chevron-d"></i>
-
-                        <div class="bloc-texte-slider">
-                                <h1><span class="titre-bleu">WEBAGENCY</span> <span class="texte-webagency">:
-                                                L'AGENCE DE TOUS<br /> VOS PROJETS</span></h1>
-                                <p class="projet-web">Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                                <a href="#Services" class="bouton-infos">Plus d'infos</a>
-                        </div>
-                        <!-- <img src="webagency_images/images/slider/bg2.jpg" /> -->
-                </div>
-
+                
         </header>
 
+<!--SLIDER-->
+        <div class="slider">
+                <img src="webagency_images/images/slider/bg1.jpg" alt="slider" />
+                <div class="liseret-background"></div>
+
+                <i class="fas fa-chevron-left chevron-g"></i>
+                <i class="fas fa-chevron-right chevron-d"></i>
+
+                <div class="bloc-texte-slider">
+                        <h1><span class="titre-bleu">WEBAGENCY</span> <span class="texte-webagency">:
+                                        L'AGENCE DE TOUS<br /> VOS PROJETS</span></h1>
+                        <p class="projet-web">Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                        <a href="#Services" class="bouton-infos">Plus d'infos</a>
+                </div>
+                <!-- <img src="webagency_images/images/slider/bg2.jpg" /> -->
+        </div>
 <!--SECTION SERVICES-->
 
         <section id="Services">
                 <h2 class="titre-services">
                         NOS SERVICES
                 </h2>
-                <hr class="separation-services">
-                <i class="fas fa-circle cercle-services"></i>
+                <div class="separateur">
+                        <hr><i class="fas fa-circle cercle-services"></i><hr>
+                </div>
                 <p class="presentation-services">Nous proposons divers services parmis lesquels la création de sites
                         web,
                         l'amélioration de l'expérience utilisateur et ses composantes, l'interface utilisateur,
@@ -125,8 +124,9 @@
         <section id="Portfolio">
                 <h2 class="presentation-projets">
                         NOS PROJETS</h2>
-                <hr class="separation-services">
-                <i class="fas fa-circle cercle-services"></i>
+                <div class="separateur">
+                <hr><i class="fas fa-circle cercle-services"></i><hr>
+                </div>
                 <p class="paragraphe-projets">Vous pouvez voir ici une ébauche de nos nombreux et différents travaux
                         déjà réalisés pour nos multiples partenaires</p>
 

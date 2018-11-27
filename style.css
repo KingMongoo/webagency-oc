@@ -56,7 +56,7 @@ body {
 
 /*----------------------------------------------HEADER AVEC NAV---------------------------------------------------------*/
 
-header .entete {
+header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -71,10 +71,6 @@ header .entete {
     background-color: rgba(247, 247, 247, 0.9);
 }
 
-.logo {
-    position: relative;
-    left: 3%;
-}
 
 #navigation-entete {
     display: flex;
@@ -126,7 +122,7 @@ header .entete {
     position: absolute;
     z-index: 1000;
     bottom: 30%;
-    left: 15%;
+    left: 12%;
 }
 
 .liseret-background {
@@ -214,7 +210,6 @@ h3 {
 
 #Services {
     text-align: center;
-    padding-top: 5%;
 }
 
 .titre-services {
@@ -222,23 +217,20 @@ h3 {
     font-family: 'Roboto-Bold', sans-serif, arial;
 }
 
-.separation-services {
-    color: rgba(0, 0, 0, 0.2);
-    width: 200px;
-    position: relative;
-    bottom: -17px;
-    /* faux mais visuellement ok version plein écran */
-    z-index: 1;
+.separateur {
+    display: flex;
+    justify-content: center;
 }
 
+.separateur hr {
+    align-self: center;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100px;
+    margin: 0;
+}
 
 .cercle-services {
     color: rgb(105, 173, 236);
-    z-index: 2;
-    position: absolute;
-    text-align: center;
-    margin-top: -5px;
-    left: 49.5%;
     border: 4px solid white;
     border-radius: 50%;
 }
@@ -441,26 +433,26 @@ article {
     position: relative;
     padding-top: 1%;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 
 figure {
     position: relative;
     overflow: hidden;
     height: 200px;
-    width: 260px;
+    width: 300px;
     margin: 15px;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
 }
 
 figure p {
-    text-align: left;
+    text-align: center;
 }
 
 .item-portfolio {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 figcaption {
@@ -468,7 +460,7 @@ figcaption {
     background: rgba(0, 0, 0, 0.4);
     color: white;
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
     opacity: 0;
     bottom: -30%;
     transition: all 0.4s ease;
@@ -585,7 +577,7 @@ textarea {
         display: none;
     }
 
-    header .entete {
+    header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -600,15 +592,6 @@ textarea {
         background-color: rgba(247, 247, 247, 0.9);
     }
 
-    .logo {
-        position: relative;
-        top: 5%;
-    }
-
-    .slider {
-        width: auto;
-    }
-
     .nav-entete {
         width: 100%;
         align-items: center;
@@ -620,25 +603,18 @@ textarea {
         padding: 0;
         text-align: center;
     }
+    
 
     #navigation-entete li {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        padding: 3px;
         margin-top: 0;
         margin-bottom: 0;
     }
 
-
-    #navigation-ebtete li a {
-        padding-top: 0;
-        margin: 0;
-        width: 100%;
-    }
-
     #navigation-entete li :hover {
-        padding-top: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 0;
         border: 3px solid rgb(105, 173, 236);
     }
 
@@ -648,8 +624,8 @@ textarea {
     #navigation-entete li a:link {
         color: rgb(133, 142, 190);
         text-decoration: none;
-        padding-right: 40%;
-        padding-left: 40%;
+        padding-right: 100px;
+        padding-left: 100px;
     }
 
     /*------------- services petit écran --------------*/
@@ -675,19 +651,7 @@ textarea {
     .presentation-services {
         padding: 10%;
     }
-
-    .cercle-services {
-        color: rgb(105, 173, 236);
-        z-index: 2;
-        position: absolute;
-        text-align: center;
-        margin-top: -5px;
-        left: 48%;
-        border: 4px solid white;
-        border-radius: 50%;
-    }
-
-
+    
     /*-------------  Portfolio petit écran --------------*/
 
     
@@ -702,7 +666,6 @@ textarea {
         margin: 0;
     }
 
-
     .paragraphe-projets {
         padding: 10%;
     }
@@ -710,9 +673,10 @@ textarea {
     figure {
         position: relative;
         height: 200px;
-        width: 260px;
+        width: 300px;
         margin: 15px;
         background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
     }
 
     figcaption {
@@ -818,4 +782,27 @@ textarea {
         padding-bottom: 7px;
 }
 
+    figure {
+        position: relative;
+        height: 200px;
+        width: 300px;
+        margin: 15px;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+    figcaption {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        width: 100%;
+        padding: 0 10px;
+        opacity: 1;
+        bottom: 8px;
+        left: 0;
+        }
+
+    figure:hover figcaption {
+        opacity: 1;
+        bottom: 8px;
+    }
 }
