@@ -326,104 +326,71 @@ article {
     margin: auto;
     width: 40%;
     padding-top: 2%;
+    padding-bottom: 2%;
     color: grey;
 }
 
-.navigation-projets {
-    list-style: none;
+.nav-projets {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 1%;
-    margin: 1%;
-}
-
-.navigation-projets li {
-    font-family: 'Roboto-Regular', sans-serif, arial;
-    font-weight: bold;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: relative;
     align-items: center;
+    font-family: 'Roboto-regular';
+    font-weight: bold;
+
 }
 
-.navigation-projets .menu-projets {
-    background-color: rgb(221, 215, 215);
+.travaux {
+    background-color: rgb(78, 177, 213);
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(47, 143, 179);
+    cursor: pointer;
 }
 
-.menu-projets-active {
-    background-color: rgb(89, 185, 219);
-    text-decoration: none;
-    border-bottom: 3px solid rgb(67, 144, 172);
+.survol {
+    cursor: pointer;
+    background-color: #e2ddd2;
+    color: rgb(104, 102, 102);
 }
 
-.menu-projets-active a {
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+.travaux, .survol {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1em;
+    position: relative;
 }
 
-.navigation-projets li a:hover {
-    color: white;
-}
-
-.navigation-projets li:hover {
-    background-color: rgb(89, 185, 219);
-    color: white;
-    text-decoration: none;
-    border-bottom: 3px solid rgb(67, 144, 172);
-}
-
-.menu-projets a,
-.icone-portfolio a {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.fleche-bas {
-    font-size: 150%;
-    /* ne pas afficher hors suvrol */
+.travaux span {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #4197bb;
     position: absolute;
-    left: 42%;
-    bottom: -50%;
-    color: rgb(67, 144, 172);
+    bottom: -8px;
+    left: 40%;
 }
 
-.menu-projets .fleche-bas {
-    visibility: hidden;
+.survol:hover {
+    background-color: rgb(78, 177, 213);
+    color: white;
+    border-bottom: 2px solid rgb(47, 143, 179);
 }
 
-.menu-projets:hover .fleche-bas {
-    visibility: visible;
+.survol:hover span {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #4197bb;
+    position: absolute;
+    left: 40%;
+    bottom: -8px;
 }
 
-.icone-portfolio:hover .fleche-bas {
-    visibility: visible;
-}
-
-.menu-projets,
-.menu-projets a:focus,
-.menu-projets a:visited {
-    color: rgb(121, 112, 112);
-    text-decoration: none;
-}
-
-.navigation-projets li:first-child,
-.navigation-projets li:first-child a {
-    /*en haut à gauche ; en haut à droite ; en bas à droite ; en bas à gauche */
-    border-radius: 5px 0px 0px 5px;
-}
-
-.icone-portfolio a,
-.icone-portfolio {
-    /*en haut à gauche ; en haut à droite ; en bas à droite ; en bas à gauche */
+.arrondiPortfolio {
     border-radius: 0px 5px 5px 0px;
+}
+
+.arrondiTravaux {
+    border-radius: 5px 0px 0px 5px;
 }
 
 .liste-projets {
@@ -475,7 +442,7 @@ figcaption div {
     width: 35px;
     height: 35px;
     background-color: rgb(68, 141, 165);
-    border-radius: 17.5px;
+    border-radius: 100%;
     border: 2px solid white;
     display: flex;
     justify-content: center;
@@ -656,18 +623,14 @@ textarea {
 
     
 
-    .navigation-projets {
-        width: 100%;
-        list-style: none;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
 
-    .paragraphe-projets {
-        padding: 10%;
+    .travaux, .survol {
+        padding-top: 10px;
+        padding-bottom: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1em;
+        position: relative;
     }
 
     figure {
@@ -766,20 +729,15 @@ textarea {
 
 @media screen and (max-width: 374px) {
 
-    .menu-projets-active a {
-        color: white;
-        padding-left: 7px;
-        padding-right: 7px;
-        padding-top: 7px;
-        padding-bottom: 7px;
-    }
 
-    .menu-projets a,
-    .icone-portfolio a {
-        padding-left: 7px;
-        padding-right: 7px;
-        padding-top: 7px;
-        padding-bottom: 7px;
+
+.travaux, .survol {
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1em;
+    position: relative;
 }
 
     figure {
