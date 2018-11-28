@@ -336,6 +336,8 @@ article {
     align-items: center;
     font-family: 'Roboto-regular';
     font-weight: bold;
+    width: 100%;
+    align-self: center;
 
 }
 
@@ -357,7 +359,6 @@ article {
     padding-bottom: 13px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 1em;
     position: relative;
 }
 
@@ -621,6 +622,16 @@ textarea {
     
     /*-------------  Portfolio petit écran --------------*/
 
+    .nav-projets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto-regular';
+        font-weight: bold;
+        width: 100%;
+        align-self: center;
+    
+    }
     
 
 
@@ -729,16 +740,25 @@ textarea {
 
 @media screen and (max-width: 374px) {
 
-
-
-.travaux, .survol {
-    padding-top: 10px;
-    padding-bottom: 13px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 1em;
-    position: relative;
-}
+    .nav-projets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto-regular';
+        font-weight: bold;
+        width: 100%;
+        align-self: center;
+    
+    }
+    
+    .travaux, .survol {
+        padding-top: 10px;
+        padding-bottom: 13px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.8em;
+        position: relative;
+    }
 
     figure {
         position: relative;
